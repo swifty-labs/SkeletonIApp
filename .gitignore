@@ -1,0 +1,6 @@
+*.xcworkspace
+xcuserdata
+Pods
+*.xcworkspacedata
+*.xcuserstate
+Breakpoints_v2.xcbkptlist
