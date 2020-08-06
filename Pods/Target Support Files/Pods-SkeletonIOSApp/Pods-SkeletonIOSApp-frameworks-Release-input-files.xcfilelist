@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-SkeletonIOSApp/Pods-SkeletonIOSApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Coordinator/Coordinator.framework
+${BUILT_PRODUCTS_DIR}/SLEssentials/SLEssentials.framework

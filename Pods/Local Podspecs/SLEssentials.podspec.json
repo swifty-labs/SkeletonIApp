@@ -1,0 +1,43 @@
+{
+  "name": "SLEssentials",
+  "version": "1.0.8",
+  "summary": "SLEssentials is set of Swift utilities",
+  "description": "SLEssentials contains most of Swift staff that have found a purpose in almost all ios applications. \nIt is based on extensions, managers and wrappers that covers most of application functionality.",
+  "homepage": "https://github.com/swifty-labs/SLEssentials",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "vukasin-popovic": "vukasin.popovic@swiftylabs.io"
+  },
+  "source": {
+    "git": "https://github.com/swifty-labs/SLEssentials.git",
+    "tag": "1.0.8",
+    "submodules": true
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "5.0",
+  "default_subspecs": [
+    "NibHelper",
+    "KeyboardContentManager",
+    "UIViewControllerEmbeding"
+  ],
+  "subspecs": [
+    {
+      "name": "NibHelper",
+      "source_files": "SLEssentials/Classes/NibHelper/*.swift"
+    },
+    {
+      "name": "KeyboardContentManager",
+      "source_files": "SLEssentials/Classes/KeyboardContentManager/*.swift"
+    },
+    {
+      "name": "UIViewControllerEmbeding",
+      "source_files": "SLEssentials/Classes/UIViewControllerEmbeding/*.swift"
+    }
+  ],
+  "swift_version": "5.0"
+}

@@ -1,0 +1,35 @@
+PODS:
+  - Coordinator (6.3)
+  - SLEssentials (1.0.8):
+    - SLEssentials/KeyboardContentManager (= 1.0.8)
+    - SLEssentials/NibHelper (= 1.0.8)
+    - SLEssentials/UIViewControllerEmbeding (= 1.0.8)
+  - SLEssentials/KeyboardContentManager (1.0.8)
+  - SLEssentials/NibHelper (1.0.8)
+  - SLEssentials/UIViewControllerEmbeding (1.0.8)
+
+DEPENDENCIES:
+  - Coordinator (from `https://github.com/radianttap/Coordinator.git`)
+  - SLEssentials (from `https://github.com/swifty-labs/SLEssentials.git`)
+
+EXTERNAL SOURCES:
+  Coordinator:
+    :git: https://github.com/radianttap/Coordinator.git
+  SLEssentials:
+    :git: https://github.com/swifty-labs/SLEssentials.git
+
+CHECKOUT OPTIONS:
+  Coordinator:
+    :commit: 2d389a6b949f21994c88e56ca00b6e1d81c6e4e8
+    :git: https://github.com/radianttap/Coordinator.git
+  SLEssentials:
+    :commit: 95b473b2948ad8b0c4cb023bdad6127db432636a
+    :git: https://github.com/swifty-labs/SLEssentials.git
+
+SPEC CHECKSUMS:
+  Coordinator: ee8b4294002fb59604c09dc88d776edfd99ee830
+  SLEssentials: 8e5172e7412255f19feb4a9df1b10fae38804ead
+
+PODFILE CHECKSUM: 386e0be0fe46d94e00746431874a06c5cd0d4d8c
+
+COCOAPODS: 1.9.3

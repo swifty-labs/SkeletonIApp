@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E6596C60AC9B18F17E30571 /* Pods_SkeletonIOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DEAE874FE64BE33F0DC1FA /* Pods_SkeletonIOSApp.framework */; };
+		CD8FF5B424DAFC8B007F4F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FF5B324DAFC8B007F4F8F /* AppDelegate.swift */; };
+		CD8FF5B624DAFC8B007F4F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FF5B524DAFC8B007F4F8F /* SceneDelegate.swift */; };
+		CD8FF5BE24DAFC8B007F4F8F /* SkeletonIOSApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD8FF5BC24DAFC8B007F4F8F /* SkeletonIOSApp.xcdatamodeld */; };
+		CD8FF5C024DAFC90007F4F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8FF5BF24DAFC90007F4F8F /* Assets.xcassets */; };
+		CD8FF5C324DAFC90007F4F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8FF5C124DAFC90007F4F8F /* LaunchScreen.storyboard */; };
+		CD8FF5CE24DAFC91007F4F8F /* SkeletonIOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FF5CD24DAFC91007F4F8F /* SkeletonIOSAppTests.swift */; };
+		CDFC22D224DB060100495D96 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC22D124DB060100495D96 /* ApplicationCoordinator.swift */; };
+		CDFC22D424DB06D500495D96 /* InitialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC22D324DB06D500495D96 /* InitialCoordinator.swift */; };
+		CDFC22D924DB076C00495D96 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC22D724DB076C00495D96 /* InitialViewController.swift */; };
+		CDFC22DA24DB076C00495D96 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFC22D824DB076C00495D96 /* InitialViewController.xib */; };
+		CDFC22DF24DB0C3600495D96 /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC22DE24DB0C3600495D96 /* CoordinatorType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD8FF5CA24DAFC91007F4F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD8FF5A824DAFC8B007F4F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD8FF5AF24DAFC8B007F4F8F;
+			remoteInfo = SkeletonIOSApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3DEAE874FE64BE33F0DC1FA /* Pods_SkeletonIOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkeletonIOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8FF5B024DAFC8B007F4F8F /* SkeletonIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkeletonIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8FF5B324DAFC8B007F4F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD8FF5B524DAFC8B007F4F8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD8FF5BD24DAFC8B007F4F8F /* SkeletonIOSApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkeletonIOSApp.xcdatamodel; sourceTree = "<group>"; };
+		CD8FF5BF24DAFC90007F4F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD8FF5C224DAFC90007F4F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD8FF5C424DAFC90007F4F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8FF5C924DAFC91007F4F8F /* SkeletonIOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkeletonIOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8FF5CD24DAFC91007F4F8F /* SkeletonIOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonIOSAppTests.swift; sourceTree = "<group>"; };
+		CD8FF5CF24DAFC91007F4F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFC22D124DB060100495D96 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		CDFC22D324DB06D500495D96 /* InitialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCoordinator.swift; sourceTree = "<group>"; };
+		CDFC22D724DB076C00495D96 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		CDFC22D824DB076C00495D96 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		CDFC22DE24DB0C3600495D96 /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		E8B1FECB8DA3BFD0F4547840 /* Pods-SkeletonIOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonIOSApp.release.xcconfig"; path = "Target Support Files/Pods-SkeletonIOSApp/Pods-SkeletonIOSApp.release.xcconfig"; sourceTree = "<group>"; };
+		F2D3F968090AACABA36FB966 /* Pods-SkeletonIOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonIOSApp.debug.xcconfig"; path = "Target Support Files/Pods-SkeletonIOSApp/Pods-SkeletonIOSApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD8FF5AD24DAFC8B007F4F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6596C60AC9B18F17E30571 /* Pods_SkeletonIOSApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8FF5C624DAFC91007F4F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2427121D36BB5B7CD436F412 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2D3F968090AACABA36FB966 /* Pods-SkeletonIOSApp.debug.xcconfig */,
+				E8B1FECB8DA3BFD0F4547840 /* Pods-SkeletonIOSApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		38021FE30A031A293E80033E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3DEAE874FE64BE33F0DC1FA /* Pods_SkeletonIOSApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD8FF5A724DAFC8B007F4F8F = {
+			isa = PBXGroup;
+			children = (
+				CD8FF5B224DAFC8B007F4F8F /* SkeletonIOSApp */,
+				CD8FF5CC24DAFC91007F4F8F /* SkeletonIOSAppTests */,
+				CD8FF5B124DAFC8B007F4F8F /* Products */,
+				2427121D36BB5B7CD436F412 /* Pods */,
+				38021FE30A031A293E80033E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD8FF5B124DAFC8B007F4F8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD8FF5B024DAFC8B007F4F8F /* SkeletonIOSApp.app */,
+				CD8FF5C924DAFC91007F4F8F /* SkeletonIOSAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD8FF5B224DAFC8B007F4F8F /* SkeletonIOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				CDFC22DB24DB0A0B00495D96 /* Utilities */,
+				CDFC22D524DB073F00495D96 /* ViewControllers */,
+				CDFC22D024DB056B00495D96 /* Coordinators */,
+				CD8FF5B324DAFC8B007F4F8F /* AppDelegate.swift */,
+				CD8FF5B524DAFC8B007F4F8F /* SceneDelegate.swift */,
+				CD8FF5BF24DAFC90007F4F8F /* Assets.xcassets */,
+				CD8FF5C124DAFC90007F4F8F /* LaunchScreen.storyboard */,
+				CD8FF5C424DAFC90007F4F8F /* Info.plist */,
+				CD8FF5BC24DAFC8B007F4F8F /* SkeletonIOSApp.xcdatamodeld */,
+			);
+			path = SkeletonIOSApp;
+			sourceTree = "<group>";
+		};
+		CD8FF5CC24DAFC91007F4F8F /* SkeletonIOSAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD8FF5CD24DAFC91007F4F8F /* SkeletonIOSAppTests.swift */,
+				CD8FF5CF24DAFC91007F4F8F /* Info.plist */,
+			);
+			path = SkeletonIOSAppTests;
+			sourceTree = "<group>";
+		};
+		CDFC22D024DB056B00495D96 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				CDFC22D124DB060100495D96 /* ApplicationCoordinator.swift */,
+				CDFC22D324DB06D500495D96 /* InitialCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CDFC22D524DB073F00495D96 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CDFC22D624DB074B00495D96 /* InitialViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CDFC22D624DB074B00495D96 /* InitialViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CDFC22D724DB076C00495D96 /* InitialViewController.swift */,
+				CDFC22D824DB076C00495D96 /* InitialViewController.xib */,
+			);
+			path = InitialViewController;
+			sourceTree = "<group>";
+		};
+		CDFC22DB24DB0A0B00495D96 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CDFC22DE24DB0C3600495D96 /* CoordinatorType.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD8FF5AF24DAFC8B007F4F8F /* SkeletonIOSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8FF5D224DAFC91007F4F8F /* Build configuration list for PBXNativeTarget "SkeletonIOSApp" */;
+			buildPhases = (
+				C11A14D4E5D00BCABECE7397 /* [CP] Check Pods Manifest.lock */,
+				CD8FF5AC24DAFC8B007F4F8F /* Sources */,
+				CD8FF5AD24DAFC8B007F4F8F /* Frameworks */,
+				CD8FF5AE24DAFC8B007F4F8F /* Resources */,
+				5559A6641021D63E0EEED84E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkeletonIOSApp;
+			productName = SkeletonIOSApp;
+			productReference = CD8FF5B024DAFC8B007F4F8F /* SkeletonIOSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD8FF5C824DAFC91007F4F8F /* SkeletonIOSAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8FF5D524DAFC91007F4F8F /* Build configuration list for PBXNativeTarget "SkeletonIOSAppTests" */;
+			buildPhases = (
+				CD8FF5C524DAFC91007F4F8F /* Sources */,
+				CD8FF5C624DAFC91007F4F8F /* Frameworks */,
+				CD8FF5C724DAFC91007F4F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD8FF5CB24DAFC91007F4F8F /* PBXTargetDependency */,
+			);
+			name = SkeletonIOSAppTests;
+			productName = SkeletonIOSAppTests;
+			productReference = CD8FF5C924DAFC91007F4F8F /* SkeletonIOSAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD8FF5A824DAFC8B007F4F8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = swiftylabs;
+				TargetAttributes = {
+					CD8FF5AF24DAFC8B007F4F8F = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					CD8FF5C824DAFC91007F4F8F = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = CD8FF5AF24DAFC8B007F4F8F;
+					};
+				};
+			};
+			buildConfigurationList = CD8FF5AB24DAFC8B007F4F8F /* Build configuration list for PBXProject "SkeletonIOSApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD8FF5A724DAFC8B007F4F8F;
+			productRefGroup = CD8FF5B124DAFC8B007F4F8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD8FF5AF24DAFC8B007F4F8F /* SkeletonIOSApp */,
+				CD8FF5C824DAFC91007F4F8F /* SkeletonIOSAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD8FF5AE24DAFC8B007F4F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8FF5C324DAFC90007F4F8F /* LaunchScreen.storyboard in Resources */,
+				CD8FF5C024DAFC90007F4F8F /* Assets.xcassets in Resources */,
+				CDFC22DA24DB076C00495D96 /* InitialViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8FF5C724DAFC91007F4F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5559A6641021D63E0EEED84E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkeletonIOSApp/Pods-SkeletonIOSApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkeletonIOSApp/Pods-SkeletonIOSApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkeletonIOSApp/Pods-SkeletonIOSApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C11A14D4E5D00BCABECE7397 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkeletonIOSApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD8FF5AC24DAFC8B007F4F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFC22DF24DB0C3600495D96 /* CoordinatorType.swift in Sources */,
+				CDFC22D224DB060100495D96 /* ApplicationCoordinator.swift in Sources */,
+				CDFC22D924DB076C00495D96 /* InitialViewController.swift in Sources */,
+				CDFC22D424DB06D500495D96 /* InitialCoordinator.swift in Sources */,
+				CD8FF5BE24DAFC8B007F4F8F /* SkeletonIOSApp.xcdatamodeld in Sources */,
+				CD8FF5B424DAFC8B007F4F8F /* AppDelegate.swift in Sources */,
+				CD8FF5B624DAFC8B007F4F8F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8FF5C524DAFC91007F4F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8FF5CE24DAFC91007F4F8F /* SkeletonIOSAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD8FF5CB24DAFC91007F4F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD8FF5AF24DAFC8B007F4F8F /* SkeletonIOSApp */;
+			targetProxy = CD8FF5CA24DAFC91007F4F8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD8FF5C124DAFC90007F4F8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD8FF5C224DAFC90007F4F8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD8FF5D024DAFC91007F4F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD8FF5D124DAFC91007F4F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD8FF5D324DAFC91007F4F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2D3F968090AACABA36FB966 /* Pods-SkeletonIOSApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VJQC3F9XH6;
+				INFOPLIST_FILE = SkeletonIOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.swiftylabs.SkeletonIOSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD8FF5D424DAFC91007F4F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B1FECB8DA3BFD0F4547840 /* Pods-SkeletonIOSApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VJQC3F9XH6;
+				INFOPLIST_FILE = SkeletonIOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.swiftylabs.SkeletonIOSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD8FF5D624DAFC91007F4F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkeletonIOSAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.swiftylabs.SkeletonIOSAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkeletonIOSApp.app/SkeletonIOSApp";
+			};
+			name = Debug;
+		};
+		CD8FF5D724DAFC91007F4F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkeletonIOSAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.swiftylabs.SkeletonIOSAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkeletonIOSApp.app/SkeletonIOSApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD8FF5AB24DAFC8B007F4F8F /* Build configuration list for PBXProject "SkeletonIOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8FF5D024DAFC91007F4F8F /* Debug */,
+				CD8FF5D124DAFC91007F4F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8FF5D224DAFC91007F4F8F /* Build configuration list for PBXNativeTarget "SkeletonIOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8FF5D324DAFC91007F4F8F /* Debug */,
+				CD8FF5D424DAFC91007F4F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8FF5D524DAFC91007F4F8F /* Build configuration list for PBXNativeTarget "SkeletonIOSAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8FF5D624DAFC91007F4F8F /* Debug */,
+				CD8FF5D724DAFC91007F4F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD8FF5BC24DAFC8B007F4F8F /* SkeletonIOSApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD8FF5BD24DAFC8B007F4F8F /* SkeletonIOSApp.xcdatamodel */,
+			);
+			currentVersion = CD8FF5BD24DAFC8B007F4F8F /* SkeletonIOSApp.xcdatamodel */;
+			path = SkeletonIOSApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD8FF5A824DAFC8B007F4F8F /* Project object */;
+}
